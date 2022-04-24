@@ -1,0 +1,30 @@
+{
+    "name": "biiiiiigmonster/laravel-restful-grammar",
+    "type": "library",
+    "keywords": [
+        "laravel", "eloquent", "grammer"
+    ],
+    "authors": [
+        {
+            "name": "biiiiiigmonster",
+            "email": "603707288@qq.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/framework": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BiiiiiigMonster\\LaravelRestfulGrammar\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BiiiiiigMonster\\LaravelRestfulGrammer\\RestfulGrammarServiceProvider"
+            ]
+        }
+    }
+}
