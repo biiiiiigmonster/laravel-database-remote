@@ -5,6 +5,7 @@ namespace BiiiiiigMonster\LaravelDatabaseRemote;
 
 
 use BiiiiiigMonster\LaravelDatabaseRemote\Connectors\RemoteConnector;
+use Illuminate\Database\Connection;
 use Illuminate\Support\ServiceProvider;
 
 class DatabaseRemoteServiceProvider extends ServiceProvider
