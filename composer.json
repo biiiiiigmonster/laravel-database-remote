@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BiiiiiigMonster\\LaravelRestfulGrammer\\RestfulGrammarServiceProvider"
+                "BiiiiiigMonster\\LaravelRestfulGrammar\\RestfulGrammarServiceProvider"
             ]
         }
     }
