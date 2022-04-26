@@ -1,5 +1,5 @@
 {
-    "name": "biiiiiigmonster/laravel-restful-grammar",
+    "name": "biiiiiigmonster/laravel-db-remote",
     "type": "library",
     "keywords": [
         "laravel", "eloquent", "grammer"
@@ -17,13 +17,13 @@
     },
     "autoload": {
         "psr-4": {
-            "BiiiiiigMonster\\LaravelRestfulGrammar\\": "src/"
+            "BiiiiiigMonster\\LaravelDbRemote\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "BiiiiiigMonster\\LaravelRestfulGrammar\\RestfulGrammarServiceProvider"
+                "BiiiiiigMonster\\LaravelRestfulGrammar\\DbRemoteServiceProvider"
             ]
         }
     }

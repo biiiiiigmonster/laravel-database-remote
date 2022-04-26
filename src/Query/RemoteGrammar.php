@@ -1,7 +1,7 @@
 <?php
 
 
-namespace BiiiiiigMonster\LaravelRestfulGrammar\Query;
+namespace BiiiiiigMonster\LaravelDbRemote\Query;
 
 
 use Illuminate\Database\Query\Grammars\Grammar;

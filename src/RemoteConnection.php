@@ -1,15 +1,15 @@
 <?php
 
 
-namespace BiiiiiigMonster\LaravelRestfulGrammar;
+namespace BiiiiiigMonster\LaravelDbRemote;
 
 
-use BiiiiiigMonster\LaravelRestfulGrammar\PDO\RemoteDriver;
-use BiiiiiigMonster\LaravelRestfulGrammar\Query\RemoteProcessor;
-use BiiiiiigMonster\LaravelRestfulGrammar\Query\RemoteGrammar as QueryGrammar;
-use BiiiiiigMonster\LaravelRestfulGrammar\Schema\RemoteBuilder;
-use BiiiiiigMonster\LaravelRestfulGrammar\Schema\RemoteGrammar as SchemaGrammar;
-use BiiiiiigMonster\LaravelRestfulGrammar\Schema\RemoteSchemaState;
+use BiiiiiigMonster\LaravelDbRemote\PDO\RemoteDriver;
+use BiiiiiigMonster\LaravelDbRemote\Query\RemoteProcessor;
+use BiiiiiigMonster\LaravelDbRemote\Query\RemoteGrammar as QueryGrammar;
+use BiiiiiigMonster\LaravelDbRemote\Schema\RemoteBuilder;
+use BiiiiiigMonster\LaravelDbRemote\Schema\RemoteGrammar as SchemaGrammar;
+use BiiiiiigMonster\LaravelDbRemote\Schema\RemoteSchemaState;
 use Illuminate\Database\Connection;
 use Illuminate\Filesystem\Filesystem;
 
@@ -18,7 +18,7 @@ class RemoteConnection extends Connection
     /**
      * Get the default query grammar instance.
      *
-     * @return \BiiiiiigMonster\LaravelRestfulGrammar\Query\RemoteGrammar
+     * @return \BiiiiiigMonster\LaravelDbRemote\Query\RemoteGrammar
      */
     protected function getDefaultQueryGrammar()
     {
@@ -28,7 +28,7 @@ class RemoteConnection extends Connection
     /**
      * Get a schema builder instance for the connection.
      *
-     * @return \BiiiiiigMonster\LaravelRestfulGrammar\Schema\RemoteBuilder
+     * @return \BiiiiiigMonster\LaravelDbRemote\Schema\RemoteBuilder
      */
     public function getSchemaBuilder()
     {
@@ -42,7 +42,7 @@ class RemoteConnection extends Connection
     /**
      * Get the default schema grammar instance.
      *
-     * @return \BiiiiiigMonster\LaravelRestfulGrammar\Schema\RemoteGrammar
+     * @return \BiiiiiigMonster\LaravelDbRemote\Schema\RemoteGrammar
      */
     protected function getDefaultSchemaGrammar()
     {
@@ -54,7 +54,7 @@ class RemoteConnection extends Connection
      *
      * @param  \Illuminate\Filesystem\Filesystem|null  $files
      * @param  callable|null  $processFactory
-     * @return \BiiiiiigMonster\LaravelRestfulGrammar\Schema\RemoteSchemaState
+     * @return \BiiiiiigMonster\LaravelDbRemote\Schema\RemoteSchemaState
      */
     public function getSchemaState(Filesystem $files = null, callable $processFactory = null)
     {
@@ -64,7 +64,7 @@ class RemoteConnection extends Connection
     /**
      * Get the default post processor instance.
      *
-     * @return \BiiiiiigMonster\LaravelRestfulGrammar\Query\RemoteProcessor
+     * @return \BiiiiiigMonster\LaravelDbRemote\Query\RemoteProcessor
      */
     protected function getDefaultPostProcessor()
     {
@@ -74,7 +74,7 @@ class RemoteConnection extends Connection
     /**
      * Get the Doctrine DBAL driver.
      *
-     * @return \BiiiiiigMonster\LaravelRestfulGrammar\PDO\RemoteDriver
+     * @return \BiiiiiigMonster\LaravelDbRemote\PDO\RemoteDriver
      */
     protected function getDoctrineDriver()
     {

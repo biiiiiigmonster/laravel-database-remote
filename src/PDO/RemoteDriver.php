@@ -1,7 +1,7 @@
 <?php
 
 
-namespace BiiiiiigMonster\LaravelRestfulGrammar\PDO;
+namespace BiiiiiigMonster\LaravelDbRemote\PDO;
 
 use Doctrine\DBAL\Driver\AbstractMySQLDriver;
 use Illuminate\Database\PDO\Concerns\ConnectsToDatabase;

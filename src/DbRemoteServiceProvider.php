@@ -1,13 +1,13 @@
 <?php
 
 
-namespace BiiiiiigMonster\LaravelRestfulGrammar;
+namespace BiiiiiigMonster\LaravelDbRemote;
 
 
-use BiiiiiigMonster\LaravelRestfulGrammar\Connectors\RemoteConnector;
+use BiiiiiigMonster\LaravelDbRemote\Connectors\RemoteConnector;
 use Illuminate\Support\ServiceProvider;
 
-class RestfulGrammarServiceProvider extends ServiceProvider
+class DbRemoteServiceProvider extends ServiceProvider
 {
     public function boot()
     {

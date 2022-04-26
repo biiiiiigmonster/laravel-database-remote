@@ -1,10 +1,10 @@
 <?php
 
 
-namespace BiiiiiigMonster\LaravelRestfulGrammar;
+namespace BiiiiiigMonster\LaravelDbRemote;
 
 
-use BiiiiiigMonster\LaravelRestfulGrammar\Connectors\RemoteConnector;
+use BiiiiiigMonster\LaravelDbRemote\Connectors\RemoteConnector;
 use Illuminate\Database\Connectors\ConnectionFactory;
 use Illuminate\Database\Connectors\MySqlConnector;
 use Illuminate\Database\Connectors\PostgresConnector;
