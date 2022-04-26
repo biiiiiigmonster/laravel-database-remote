@@ -1,7 +1,7 @@
 <?php
 
 
-namespace BiiiiiigMonster\LaravelDbRemote\Schema;
+namespace BiiiiiigMonster\LaravelDatabaseRemote\Schema;
 
 
 use Illuminate\Database\Schema\Builder;

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace BiiiiiigMonster\LaravelDbRemote\Connectors;
+namespace BiiiiiigMonster\LaravelDatabaseRemote\Connectors;
 
 
 use Illuminate\Database\Connectors\Connector;
