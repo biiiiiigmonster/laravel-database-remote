@@ -15,6 +15,13 @@ use Illuminate\Filesystem\Filesystem;
 
 class RemoteConnection extends Connection
 {
+    public function select($query, $bindings = [], $useReadPdo = true)
+    {
+        return $this->run($query, $bindings, function ($query, $bindings) use ($useReadPdo) {
+            var_dump($query);die;
+        });
+    }
+
     /**
      * Get the default query grammar instance.
      *
